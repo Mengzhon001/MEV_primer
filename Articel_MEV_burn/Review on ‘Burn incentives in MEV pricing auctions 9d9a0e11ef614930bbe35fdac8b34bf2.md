@@ -1,5 +1,10 @@
 # Review on ‘Burn incentives in MEV pricing auctions’ and More
 
+## Author
+
+- **Name:** Mengzhong (Jeff) Ma
+- **Email:** mamengzhong@gmail.com
+
 See the original article: https://ethresear.ch/t/burn-incentives-in-mev-pricing-auctions/19856
 
 While now the PBS solution is dominated by MEV sharing (MEV-share by Flashbots and MEV-blocker by CoW Swap), other solutions remain: MEV burning and MEV smoothing. The current solution employ relayers as the side-car to actualize the separation of proposer and builders, but this off-protocol design lays uncertainty to the ecosystem. In Ethereum roadmap, the Scourge stage introduces a in-protocol PBS (also,  enshrined PBS), which is expected to solve MEV issue by MEV burning. Similar with the case of MEV sharing, in the proposal design of MEV burning on ePBS, MEV value is estimated through an auction (MEV-pricing auction) among builders (or execution proposers) and then burned. At least one bid is expected in the auction that can cover some part of MEV. However, the incentives urging builders to place such bid may vary. The article https://ethresear.ch/t/burn-incentives-in-mev-pricing-auctions/19856 discusses the potential incentives that encourage builders’ bid in the MEV-pricing auction while analyzing each incentive’s sustainability. A take-away is that competition among Staking service providers (SSPs) will urge them to deprive each others’ profit by biding in the MEV-pricing auction, so as to prevent delegators switching to competitors. This spontaneous biding by the SSP related builders makes the public-good builder biding solely for the public goodwell unnecessary as long as new builders are free to entry. This article summarizes the necessary background for understanding EVM-burning and auction. As well, I give comments in the final section on the potential risk in the long-run which may drive the key assumption (builder market free entry) ineffective, which is ignored by the author.
