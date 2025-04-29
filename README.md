@@ -1,4 +1,4 @@
-# Materials for Tutorals of Token Economy (MEV primer)
+# MEV primer
 
 1. You can find the python version of uniswap core contract in `Atomic_arb/uniswap`, which you can use to build your local quoter.
 
